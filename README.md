@@ -1,6 +1,7 @@
 # Image_Data_Augmentation
 
-![Screen Shot 2021-12-08 at 3 13 48 PM](https://user-images.githubusercontent.com/49293572/145290167-9547606e-ddde-43d3-b264-a04f9c6fb8a1.png)
-![Screen Shot 2021-12-08 at 3 07 31 PM](https://user-images.githubusercontent.com/49293572/145290188-4aa63746-a40b-494b-a4e2-23baeb29cf8e.png)
-![Screen Shot 2021-12-08 at 3 14 35 PM](https://user-images.githubusercontent.com/49293572/145290197-231a8f82-c4c6-4bdb-b898-c1081753e7a8.png)
-<img width="439" alt="Screen Shot 2021-12-08 at 5 04 53 PM" src="https://user-images.githubusercontent.com/49293572/145291942-db4c56b8-7ba8-4865-b4fc-d92d67316107.png">
+
+![Screen Shot 2021-12-08 at 3 40 28 PM](https://user-images.githubusercontent.com/49293572/145293886-2b3d1c3a-b80c-4abe-99cb-3184c63b1383.png)
+![Screen Shot 2021-12-08 at 5 20 25 PM](https://user-images.githubusercontent.com/49293572/145293980-b77b15cd-60d5-4cc2-bd8e-82946a482f45.png)
+![Screen Shot 2021-12-08 at 5 21 03 PM](https://user-images.githubusercontent.com/49293572/145293896-7e882772-fdab-49aa-9860-1119c5c43b33.png)
+![Screen Shot 2021-12-08 at 5 26 25 PM](https://user-images.githubusercontent.com/49293572/145296997-5422e167-326a-4092-9ba5-1cb768b082f8.png)
