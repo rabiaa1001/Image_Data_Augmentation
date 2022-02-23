@@ -24,11 +24,6 @@ def augment_dataset():
     images = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if
             os.path.isfile(os.path.join(folder_path, f))]
 
-    # Image folder should have atleast 20 images, although this can be changed
-    if len(images) <= 20:
-        return print("Need at least 20 images")
-
-
     # Randomly select images to augment based on num_files_desired
     random_images = random.choices(images, k = num_files_desired)
 
