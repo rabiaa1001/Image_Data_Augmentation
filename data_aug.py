@@ -17,7 +17,8 @@ def augment_dataset():
     """
     1.Reads through images in the folder_path
     2.Randomly selects files to augment
-    3.Stores augmented images in a folder
+    3.Performs random augmentation techniques
+    4.Stores augmented images in a folder
     -------------------------
     Parameters: None
     -------------------------
