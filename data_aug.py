@@ -1,31 +1,35 @@
 
-# IMAGE DATASET AUGMENTATION
+# IMAGE DATA AUGMENTATION
 ###########################################
 
+import os
+from collections import deque
+import numpy as np
 import imageio
 import imgaug.augmenters as iaa
-import os
-import random
 
 
 def augment_dataset():
     """
-    Read through images in the folder_path
-    Randomly select files by to augment
-    Store augmented images in a folder
+    1.Reads through images in the folder_path
+    2.Randomly selects files to augment
+    3.Stores augmented images in a folder
+    -------------------------
+    Parameters: None
+    -------------------------
+    Return: Augmented images in specified write folder
     """
     # Path of folder to images that should be augmented
     folder_path = './images_not_augmented/'
     # Number of file to generate
     num_files_desired = 20
 
-
     # Loop on all files of the folder and build a list of files paths
-    images = [os.path.join(folder_path, f) for f in os.listdir(folder_path) if
-            os.path.isfile(os.path.join(folder_path, f))]
+    images = deque([os.path.join(folder_path, f) for f in os.listdir(folder_path) if
+            os.path.isfile(os.path.join(folder_path, f))])
 
     # Randomly select images to augment based on num_files_desired
-    random_images = random.choices(images, k = num_files_desired)
+    random_images = np.random.choice(images, size = num_files_desired)
 
     for each in random_images:
 
@@ -40,9 +44,12 @@ def augment_dataset():
             iaa.AddToHueAndSaturation((-10, 10)),# (-20, 20)
             iaa.Crop(percent=(0, 0.3)) # .2
         ], random_order=True)
-
+        
+        # Separate image name
         an_image = each.split('/')[-1]
+        # Retrieve image path
         write_folder =  './images_augmented/'
+        # Sequence to augment the random image
         images_aug = seq(image=each_image)
 
         # Write images to write_folder
