@@ -9,6 +9,10 @@ import imageio
 import imgaug.augmenters as iaa
 
 
+ORIGIN_FOLDER_PATH = './images_not_augmented/'
+WRITE_FOLDER_PATH = './images_augmented/'
+NUM_TO_AUGMENT = 20
+
 def augment_dataset():
     """
     1.Reads through images in the folder_path
@@ -20,9 +24,9 @@ def augment_dataset():
     Return: Augmented images in specified write folder
     """
     # Path of folder to images that should be augmented
-    folder_path = './images_not_augmented/'
+    folder_path = ORIGIN_FOLDER_PATH
     # Number of file to generate
-    num_files_desired = 20
+    num_files_desired = NUM_TO_AUGMENT
 
     # Loop on all files of the folder and build a list of files paths
     images = deque([os.path.join(folder_path, f) for f in os.listdir(folder_path) if
@@ -48,7 +52,7 @@ def augment_dataset():
         # Separate image name
         an_image = each.split('/')[-1]
         # Retrieve image path
-        write_folder =  './images_augmented/'
+        write_folder =  WRITE_FOLDER_PATH
         # Sequence to augment the random image
         images_aug = seq(image=each_image)
 
