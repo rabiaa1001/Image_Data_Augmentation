@@ -2,8 +2,8 @@ import os
 from data_aug import augment_dataset
 import pytest
 
-PATH_TO_AUGMENT = './Test_images'
-WRITE_FOLDER = './Test_images/Test_augmention_images/'
+PATH_TO_AUGMENT = './Test_images/images_to_augment'
+WRITE_FOLDER = './Test_images/augmented_images/'
 NUM_TO_AUGMENT = 5
 
 def test_augment_dataset():
