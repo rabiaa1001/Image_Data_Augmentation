@@ -9,8 +9,8 @@ import imageio
 import imgaug.augmenters as iaa
 
 
-ORIGIN_FOLDER_PATH = '/Users/rabia/PycharmProjects/pythonProject/hijjab_vs_non_hijjab_project/python_py_test/Test_images/images_to_augment'
-WRITE_FOLDER_PATH = '/Users/rabia/PycharmProjects/pythonProject/hijjab_vs_non_hijjab_project/python_py_test/Test_images/augmented_images'
+ORIGIN_FOLDER_PATH = './tests/Test_images/images_to_augment'
+WRITE_FOLDER_PATH = './tests/Test_images/augmented_images'
 NUM_TO_AUGMENT = 20
 
 def augment_dataset(folder_path:str,write_folder:str,num_files_desired:int) -> str:
