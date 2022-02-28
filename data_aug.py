@@ -10,7 +10,7 @@ import imgaug.augmenters as iaa
 
 
 ORIGIN_FOLDER_PATH = './tests/Test_images/images_to_augment'
-WRITE_FOLDER_PATH = './tests/Test_images/augmented_images'
+WRITE_FOLDER_PATH = './tests/Test_images/augmented_images/'
 NUM_TO_AUGMENT = 20
 
 def augment_dataset(folder_path:str,write_folder:str,num_files_desired:int) -> str:
