@@ -8,7 +8,7 @@ NUM_TO_AUGMENT = 5
 
 def test_augment_dataset():
     """
-    Test to verify images are being augmented as expected
+    Test to verify images are being augmented
     and written to write folder
     """
     augmented_image = augment_dataset(PATH_TO_AUGMENT,WRITE_FOLDER,NUM_TO_AUGMENT)
