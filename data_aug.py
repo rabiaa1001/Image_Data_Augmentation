@@ -13,14 +13,21 @@ ORIGIN_FOLDER_PATH = './images_not_augmented/'
 WRITE_FOLDER_PATH = './images_augmented/'
 NUM_TO_AUGMENT = 20
 
-def augment_dataset(folder_path:str,write_folder:str,num_files_desired:int):
+def augment_dataset(folder_path:str,write_folder:str,num_images_desired:int):
     """
     1.Reads through images in the folder_path
     2.Randomly selects files to augment
     3.Performs random augmentation techniques
     4.Stores augmented images in a folder
     -------------------------
-    Parameters: None
+    Parameters
+    -------------------------
+    folder_path: str
+        - The path of the folder that contains the images that should be augmented
+    write_folder: str
+        - The path of the folder where the augmented images should be written to
+    num_images_desired: int
+        - The number of images that should be augmented
     -------------------------
     Return: Augmented images in specified write folder
     """
@@ -29,7 +36,7 @@ def augment_dataset(folder_path:str,write_folder:str,num_files_desired:int):
             os.path.isfile(os.path.join(folder_path, f))])
 
     # Randomly select images to augment based on num_files_desired
-    random_images = np.random.choice(images, size = num_files_desired)
+    random_images = np.random.choice(images, size = num_images_desired)
 
     for each in random_images:
 
