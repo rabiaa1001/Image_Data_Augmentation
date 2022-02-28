@@ -4,7 +4,7 @@
 Augment images to increase a dataset and potentially improve accuracy
 
 ### Methods
-#### There are various libraries that will effectively augment your dataset, below are just 3
+#### There are various libraries that will effectively augment your dataset, below are 3 common libraries
  - imageio
  - ImageDataGenerator - to be added
  - tensorflow this method uses GPUs while performing image augmention  -- to be added
